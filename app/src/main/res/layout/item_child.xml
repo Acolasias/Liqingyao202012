@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/it_box"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/it_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="9"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/it_name"
+            android:layout_width="wrap_content"
+            android:text="132"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/it_price"
+            android:layout_width="wrap_content"
+            android:text="123456"
+            android:textColor="#ff00"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.bawei.lqy.view.widget.AddSubView
+        android:id="@+id/add_sub_view"
+        android:layout_width="80dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"></com.bawei.lqy.view.widget.AddSubView>
+</LinearLayout>

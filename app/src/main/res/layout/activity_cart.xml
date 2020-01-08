@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.CartActivity">
+
+    <ExpandableListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="0dp"></ExpandableListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <CheckBox
+            android:id="@+id/it_all"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="全选"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/it_price"
+            android:layout_width="wrap_content"
+            android:text="合计:￥000.0"
+            android:textColor="#ff00"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/it_btn"
+            android:layout_width="wrap_content"
+            android:text="去结算(00)"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="160dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
